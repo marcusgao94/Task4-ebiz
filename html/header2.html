@@ -17,7 +17,7 @@
 			    <li><a href="#">Page 1</a></li>
 			    <li><a href="#">Page 2</a></li>
 			    <li><a href="#">Page 3</a></li>
-				<li>
+			    <li>
 					<form class="navbar-form" role="search">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
@@ -27,11 +27,20 @@
 						</div>
 					</form>
 				</li>
-				<li>
-					<button class = "inside_popover" data-html ="true" data-toggle="popover" data-placement="bottom" data-content='<button class="btn btn-success">Sign Out</button>' style="margin-left:8em;margin-top:8px;  width:10em;background-color:rgba(19,228,170,0.9);padding:5px;border-radius:10px;">
-						Hi, Santosh
-					</button>
+				<li id = "containerli">
+					<div class="input-prepend">
+					    <button class="session_start" data-placement='bottom' style="margin-left:8em;margin-top:8px;  width:10em;background-color:rgba(19,228,170,0.9);padding:5px;border-radius:10px;">
+					    	Hi, Santosh
+					    </button>
+					</div>
 
+					<div id="popover-content" style="display: none">
+					    <form>
+					    	<span class ="signout" style="margin-top:20px; width:10em;background-color:rgba(232,232,232,0.9);padding:10px;border-radius:10px;">
+					    		Sign Out
+					    	</span>
+					    </form>
+					</div>
 				</li>
 			</ul>
 		</nav>
@@ -39,8 +48,15 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script>
-			$(document).ready(function(){
-			    $('[data-toggle="popover"]').popover();
+			$('.session_start').popover({
+			    html : true,
+			    trigger : 'click',
+			    content : function() {
+			        return $('#popover-content').html();
+			    }
+			});
+			$(document).on('click','.signout',function(){
+			    window.location.replace("header.html");
 			});
 		</script>
 	</body>
