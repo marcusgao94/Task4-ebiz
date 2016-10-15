@@ -37,3 +37,12 @@ background-color: #030033;
     }
 
     .loginid,.signout { cursor: pointer; }
+
+    .validate,.session_start{
+      margin-top:8px;
+    }
+
+    .navbar>.containerli, .cart {
+      float:right;
+    }
+    
