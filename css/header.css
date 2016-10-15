@@ -1,0 +1,37 @@
+.affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  .inside_popover {
+	color: #000;
+  }
+  .navbar .nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #000;  /*Sets the text hover color on navbar*/
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active >   
+ a:hover, .navbar .nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: #030033;
+}
+
+  .navbar {
+    background-color: #0f006f;
+    border-color: #030033;
+}
+
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
+    text-decoration: none;
+    background-color: silver; /*Change rollover cell color here*/
+  }
+
+
+  .navbar .nav > li > a {
+   color: white; /*Change active text color here*/
+    }
