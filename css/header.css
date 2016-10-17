@@ -38,11 +38,18 @@ background-color: #030033;
 
     .loginid,.signout { cursor: pointer; }
 
-    .validate,.session_start{
+    .validate,.session_start, .register{
       margin-top:8px;
+      margin-right:10px;
     }
 
     .navbar>.containerli, .cart {
       float:right;
     }
-    
+.glyphicon {
+    font-size: 40px;
+    margin-top: 4px;
+}
+.badge {
+  vertical-align: top;
+}
