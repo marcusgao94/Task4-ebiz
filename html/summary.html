@@ -22,10 +22,11 @@
       </nav>
       <div class="col-sm-6">
         <div class = "well" id="section1">
-          <span>Address Information</span>
+          <span><b>Address Information</b></span>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addressModal" style="float: right;">Change</button>
           <hr>
           <div class = "well">
-            <span class = "Name">Santosh Bhat</span><br/><br/>
+            <span class = "Name"><b>Santosh Bhat</b></span><br/><br/>
             <address class="vcard">
               <span class="adr">
                 <span class="street-address">319 MOREWOOD AVENUE</span><br/>
@@ -36,7 +37,6 @@
               </span>
             </address>
           </div>
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addressModal">Change</button>
           <!-- Add new address Modal -->
           <div class="modal fade" id="addressModal" role="dialog">
             <div class="modal-dialog">
@@ -383,9 +383,12 @@
           <!-- end new address modal-->
         </div>
         <div class = "well" id="section2">
-          <span>Billing Information</span>
+          <span><b>Billing Information</b></span>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#payModal" style="float: right;">Change</button>
           <hr>
           <div class = "well">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/checkout/payselect/card-logos-small/visa._CB196106248_.gif">
+            <br>
             <span> <b>VISA</b> ending in 1111</span><br/>
             <span><a href="#">Billing Address:</a>&nbsp;Same as shipping address</span><br/>
             <input type="text" class="form-control inputpromo" size="10" placeholder="Add Promo Code">
@@ -393,7 +396,7 @@
               Apply
             </span>
           </div>
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#payModal">Change</button>
+         
           <!-- Add new paying method Modal -->
           <div class="modal fade" id="payModal" role="dialog">
             <div class="modal-dialog">
@@ -442,8 +445,8 @@
       </div>
     </div>
     <div class = "well" id="section3">
-      <span>Product Information</span>
-      <a href="#" class = "change"> Change </a>
+      <span><b>Product Information</b></span>
+      <button type="button" class="btn btn-primary" style="float: right;">Change</button>
       <hr>
       <div class="well row">
         <div class = "col-sm-6 product">
