@@ -1,0 +1,16 @@
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+ .container {
+ 	width:75%;
+ 	margin-top: 10px;
+ }
+ .lower-data {
+ 	height:auto;
+ }
+ .img{
+ 	width:100%;
+ 	height:100%;
+ }
