@@ -5,7 +5,7 @@ var data = {
             "Antibiotics": [
 				"Amoxil", "Ampicillin", "Augmentin", "Bactrim", "Biaxi", "Cefixime", "Ceftin", "Ciplox", "Cleocin", "Doxycyclin", "Erythromycin", "Floxin", "Fucidin$", "Keflex", "Keftab", "Minocin", "Minomycin", "Myambutol", "Noroxin", "Omnicef", "Panmycin", "Roxithromycin", "Stromectol", "Suprax", "Trimox", "Vanti", "Zithroma"
             ],
-            "Birth Control": [
+            "BirthControl": [
 				"Alesse","Levlen","Mircett", "Yasmin"
 			],
 			"Depression": [
@@ -14,10 +14,10 @@ var data = {
 			"Diabetes": [
 				"Actoplus Met", "Actos", "Amaryl", "Avapr", "Benfotiamine", "Cozaar", "Diabecon", "Duetac", "Glucophage", "Glucotrol XL", "Glycome", "Januvia", "Metformin", "Micronase", "Prandin", "Precose"
 			],
-			"Heart Disease": [
+			"HeartDisease": [
 				"Abana","Albendazol","Aldacton","Altac","Atorlip-1","Atorlip-2","Atorlip-","Betapac","Bystoli","Cala","Cardize","Core","Digoxi","Diova","Plavi","Prednisolon","Priniv","Procardi","Propranolo","Tenormi","Toprol X","Torsemid","Vasote","Zestri"
 			],
-			"Pain Relief": [
+			"PainRelief": [
 				"Aleve","Anacin","Arcoxia","Artane","Aspirin$","Azulfidine","Benemid","Cafergot","Colospa","Diclofenac Gel","Elavil","Flexisyn$","Imitrex","Imuran","Lioresa","Maxalt","Mestinon","Mobic","Motrin","Naprosyn","Nimotop","Periactin","Phenergan","Pletal","Ponstel","Prednison","Probala","Pyridium","Rumalaya$","Rumalaya forte$","Rumalaya gel$","Rumalaya liniment$","Shallaki$","Tegreto","Torado","Urispas","Voltaren","Voveran","Voveran sr"
 			]
         };
@@ -29,23 +29,32 @@ var data = {
             order: "asc",
             hint: true,
             group: {
-                template: "{{group}} beers!"
+                template: "{{group}} medicines!"
             },
             maxItemPerGroup: 5,
-            dropdownFilter: "all beers",
+            dropdownFilter: "all medicines",
             emptyTemplate: 'No result for "{{query}}"',
             source: {
-                ale: {
-                    data: data.ale
+                Allergies: {
+                    data: data.Allergies
                 },
-                lager: {
-                    data: data.lager
+                Antibiotics: {
+                    data: data.Antibiotics
                 },
-                "stout and porter": {
-                    data: data.stout
+                "Birth Control": {
+                    data: data.BirthControl
                 },
-                malt: {
-                    data: data.malt
+                Depression: {
+                    data: data.Depression
+                }, 
+                Diabetes: {
+                	data: data.Diabetes
+                }, 
+                "Heart Disease": {
+                	data: data.HeartDisease
+                },
+                "Pain Relief": {
+                	data: data.PainRelief
                 }
             },
             callback: {
