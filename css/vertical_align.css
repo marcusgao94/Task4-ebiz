@@ -1,0 +1,9 @@
+.vc {
+	display: flex;
+}
+
+.vc > [class*="col-xs-"] {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
