@@ -1,0 +1,66 @@
+.newbody {
+      position: relative;
+  }
+  ul.nav-pills {
+      top: 20px;
+      position: fixed;
+  }
+  div.col-sm-9 div {
+      height: auto;
+  }
+  #section1 {color: #000; }
+  #section2 {color: #000; }
+  #section3 {color: #000; }
+  
+  hr {
+    border-color: #000;
+  }
+  .well {
+    margin-top: 20px;
+    max-width: 600px;
+  }
+  .borderless td, .borderless th {
+    border:  none;
+  }
+  .leftd {
+    width:75%;
+  } 
+  .rightd {
+    width:25%;
+  } 
+  .change {
+    float: right;
+  }
+  .col-sm-9 {
+    float: left;
+  }
+  .promo {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .inputpromo {
+    width: 35%;
+    float: left;
+    margin-top: 11px;
+  }
+  .product {
+    float: left;
+  }
+  .quantity {
+    float: left;
+    font-size: 25px;
+  }
+  .placeorder {
+    width:100%;
+  }
+  .order {
+    font-size: 22px;
+  }
+  .order2 {
+    font-size: 22px;
+    color: rgba(244,0,0,0.9);
+  }
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }

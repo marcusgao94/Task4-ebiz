@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/summary.css">
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+
+<div class="container" >
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+   
+                
+              
+      <ul class="nav nav-pills nav-stacked">
+      <img src="../product1.png" id="img1" class="media-object" style="width:60px;"><br/>
+        <li class="active" id="li1"><a href="#section1">Address Information</a></li>
+        <li><a href="#section2">Billing Information</a></li>
+        <li><a href="#section3">Product Information</a></li>
+      </ul>
+    </nav>
+    <div class="col-sm-6">
+      <div class = "well" id="section1">
+        <span>Address Information</span>
+        <a href="#" class = "change"> Change </a>
+        <hr>
+        <div class = "well">
+          <span class = "Name">Santosh Bhat</span><br/><br/>
+          <address class="vcard">
+            <span class="adr">
+            <span class="street-address">319 MOREWOOD AVENUE</span><br/>
+            <span class="locality">PITTSBURGH</span>,
+            <abbr class="region" title="Pennsylvania">PA</abbr>&nbsp;&nbsp;<br/>
+            <span class="country-name">USA</span>
+            <span class="postal-code">15213</span><br/>
+            </span>
+          </address>
+        </div>
+      </div>
+      <div class = "well" id="section2">
+        <span>Billing Information</span>
+         <a href="#" class = "change"> Change </a>
+        <hr>
+        <div class = "well">
+            <span> <b>VISA</b> ending in 1111</span><br/>
+            <span><a href="#">Billing Address:</a>&nbsp;Same as shipping address</span><br/>
+            <input type="text" class="form-control inputpromo" size="10" placeholder="Add Promo Code">
+            <span class ="btn btn-primary promo" >
+              Apply
+            </span>
+        </div>
+      </div>
+      <div class = "well" id="section3">
+        <span>Product Information</span>
+         <a href="#" class = "change"> Change </a>
+        <hr>
+        <div class="well row">
+          <div class = "col-sm-6 product">
+            <div class="media">
+              <div class="media-left">
+                <img src="../product1.png" class="media-object" style="width:60px">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">ADVIL</h4>
+                <p>Advil pain reliever/fever reducer<br/> 200 mg, liquid filled capsules<br/> 80 liqui-gels</p><p>$9.99</p>
+                
+                
+              </div>
+
+            </div>
+            <p class="quantity">Qty:</p>
+            <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+          </div>
+          <div class = "col-sm-6 delivery">
+          <div>Choose delivery options</div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Option 1</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Option 2</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Option 3</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class = "well fixit" data-spy = "affix">
+        <button type="button" class="btn btn-primary placeorder" >
+          Place Your Order
+        </button><br/><hr>
+        <b class ="order">Order Summary</b><br/><br/>
+        <div class="table-responsive borderless">
+          <table class="table">
+            <tr>
+              <td class="leftd">
+                Items:
+              </td>
+              <td class="rightd">
+                $9.99
+              </td>
+            </tr>
+            <tr>
+              <td class="leftd">
+                Shipping & Handling:
+              </td>
+              <td class="rightd">
+                $0.00
+                <hr>
+              </td>
+            </tr>
+            <tr>
+              <td class="leftd">
+                Total before tax:
+              </td>
+              <td class="rightd">
+                $9.99
+              </td>
+            </tr>
+            <tr>
+              <td class="leftd">
+                Estimated tax:
+              </td>
+              <td class="rightd">
+                $0.00
+              </td>
+            </tr>
+          </table>
+          <div>
+            <div class="table-responsive borderless">
+              <table class="table">
+                <tr>
+                  <td class="leftd order2">
+                    Order Total:
+                  </td>
+                  <td class="rightd order2">
+                    $9.99
+                  </td>
+                </tr>
+              </table>  
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../bootstrap/js/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../JavaScript/summary.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#li1').resize(function() {
+        $('#img1').width($('#li1').width());
+    });
+});
+</script>
+</body>
+</html>
+
