@@ -33,32 +33,24 @@
                 </div>
             </form>
 			
-			<div class="input-prepend">
-				<a href="cart.html" style="float: right;">
-				    <span class="glyphicon glyphicon-shopping-cart" ></span>
-				    <span class="badge" style="margin-right: 10px;">2</span>
-				</a>
-				<a href = "register.html" class="btn btn-primary register" data-placement='bottom' style = "float:right;">
-			    	Register
-			    </a>
-			    <button class="btn btn-primary validate" data-placement='bottom' style = "float:right;">
-			    	Login
-			    </button>
-			    
-			</div>
+			<div class="input-prepend" >
+              <a href="cart.html" style="float: right;">
+                    <span class="glyphicon glyphicon-shopping-cart" ></span>
+                    <span class="badge" style="margin-right: 10px;">2</span>
+                  </a>
+              
+              <button class="btn btn-primary session_start" data-placement='bottom' style = "float:right;">
+                Hi, Santosh
+              </button>
+          </div>
 
 			<div id="popover-content" style="display: none">
-				<form>
-				   	Username&nbsp;&nbsp;
-				   	<input class="username" type="text"/>
-				   	Password&nbsp;&nbsp;
-				   	<input class="password" type="text"/><br/><br/>
-				
-				   	<span class ="btn btn-success loginid" >
-				   		Login
-			    	</span>
-				</form>
-			</div>	
+              <form>
+                <span class ="btn btn-success signout" >
+                  Sign Out
+                </span>
+              </form>
+          </div>	
 		</nav>
 </div>
 <!-- header end-->
@@ -117,17 +109,16 @@
  <script src="../JavaScript/jquery.typeahead.js"></script>
 		<script src = ../JavaScript/header2.js></script>
 		<script>
-			$('.validate').popover({
-			    html : true,
-			    trigger : 'click',
-			    content : function() {
-			        return $('#popover-content').html();
-			    }
-			});
-			$(document).on('click','.loginid',function(){
-			    window.location.replace("index2.html");
-			});
-			
-		</script>
+      $('.session_start').popover({
+          html : true,
+          trigger : 'click',
+          content : function() {
+              return $('#popover-content').html();
+          }
+      });
+      $(document).on('click','.signout',function(){
+          window.location.replace("index.html");
+      });
+    </script>
 </body>
 </html>
