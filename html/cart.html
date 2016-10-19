@@ -4,17 +4,122 @@
 	<meta charset="UTF-8">
 	<title>shopping cart</title>
 	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/vertical_align.css">
-	<style>
-		.description {
-			margin-top: 20px;
-			margin-bottom: 20px;
-		}
-	</style>
+	<link rel="stylesheet" href="../css/cart.css">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link href="../css/columnleft.css" rel="stylesheet" type="text/css">
+	<link href="../css/columnright.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.typeahead.css">
 </head>
 <body>
-<div id="header"></div>
-<div class="container">
+
+<div class="nav-side-menu" style="width:auto;height:auto;">
+    <div class="brand">Brand Logo</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    
+    <div class="menu-list">
+      
+      <ul id="menu-content" class="menu-content collapse out">
+        <li>
+          <a href="#">
+            <i class="fa fa-dashboard fa-lg"></i> Dashboard
+          </a>
+        </li>
+
+        <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+          <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
+        </li>
+        <ul class="sub-menu collapse" id="products">
+          <li class="active"><a href="#">CSS3 Animation</a></li>
+          <li><a href="#">General</a></li>
+          <li><a href="#">Buttons</a></li>
+          <li><a href="#">Tabs & Accordions</a></li>
+          <li><a href="#">Typography</a></li>
+          <li><a href="#">FontAwesome</a></li>
+          <li><a href="#">Slider</a></li>
+          <li><a href="#">Panels</a></li>
+          <li><a href="#">Widgets</a></li>
+          <li><a href="#">Bootstrap Model</a></li>
+        </ul>
+
+
+        <li data-toggle="collapse" data-target="#service" class="collapsed">
+          <a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
+        </li>  
+        <ul class="sub-menu collapse" id="service">
+          <li>New Service 1</li>
+          <li>New Service 2</li>
+          <li>New Service 3</li>
+        </ul>
+
+
+        <li data-toggle="collapse" data-target="#new" class="collapsed">
+          <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
+        </li>
+        <ul class="sub-menu collapse" id="new">
+          <li>New New 1</li>
+          <li>New New 2</li>
+          <li>New New 3</li>
+        </ul>
+
+
+        <li>
+          <a href="#">
+            <i class="fa fa-user fa-lg"></i> Profile
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa fa-users fa-lg"></i> Users
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
+    <img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;">
+    <form class="navbar-form navbar-left" role="search">
+      <div class="typeahead__container">
+        <div class="typeahead__field">
+          <span class="typeahead__query">
+            <input class="js-typeahead-input"
+            name="q"
+            type="text"
+            size="10" 
+            autocomplete="off">
+          </span>
+          <span class="typeahead__button">
+            <button class="btn btn-default" type="submit">
+              <span class="typeahead__search-icon"></span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </form>
+    
+    <div class="input-prepend" >
+      <a href="cart.html" style="float: right;">
+        <span class="glyphicon glyphicon-shopping-cart" ></span>
+        <span class="badge" style="margin-right: 10px;">2</span>
+      </a>
+      
+      <button class="btn btn-primary session_start" data-placement='bottom' style = "float:right;">
+        Hi, Santosh
+      </button>
+    </div>
+
+    <div id="popover-content" style="display: none">
+      <form>
+        <span class ="btn btn-success signout" >
+          Sign Out
+        </span>
+      </form>
+    </div>  
+  </nav>
+
+
+<div class="container" style="margin-left: 150px; margin-top: 50px; width: 85%">
 	<div class="row">
 		<div class="col-xs-4">
 			<h1>shopping cart</h1>
@@ -163,15 +268,22 @@
 
 
 </div>
-<div id="footer"></div>
 	
 </body>
 <script src="../bootstrap/js/jquery.min.js"></script>
 <script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../JavaScript/jquery.typeahead.js"></script>
+<script src = ../JavaScript/header2.js></script>
 <script>
-	$(function() {
-		$('#header').load('header.html');
-		$('#footer').load('footer.html');
-	});
+    $('.session_start').popover({
+        html : true,
+        trigger : 'click',
+        content : function() {
+            return $('#popover-content').html();
+        }
+    });
+    $(document).on('click','.signout',function(){
+        window.location.replace("index.html");
+    });
 </script>
 </html>
