@@ -1,0 +1,8 @@
+@charset "utf-8";
+.columnleft {
+	background-color: #F2DEF5;
+	float: left;
+	height: 800px;
+	width: 200px;
+	margin-top:200
+}
