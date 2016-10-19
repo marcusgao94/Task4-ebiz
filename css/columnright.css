@@ -23,6 +23,8 @@ background-color:#9C9EF4;
   width: 300px;
   height: 100%;
   color: #e1ffff;
+  margin-left: 5px;
+  margin-top: 100px;
 }
 .nav-side-menu .brand {
   background-color: #23282e;
@@ -162,5 +164,5 @@ body {
 }
 .data1{
 	margin-top: 65px;
-	margin-left: 65px;
+	margin-left: 15%;
 }
