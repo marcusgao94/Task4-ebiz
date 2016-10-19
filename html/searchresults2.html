@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Productpage</title>
+  <style type="text/css">
+
+  </style>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link href="../css/columnleft.css" rel="stylesheet" type="text/css">
+  <link href="../css/columnright.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/jquery.typeahead.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
+  <img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;">
+			<form class="navbar-form navbar-left" role="search">
+                <div class="typeahead__container">
+                    <div class="typeahead__field">
+                        <span class="typeahead__query">
+                            <input class="js-typeahead-input"
+                                   name="q"
+                                   type="text"
+                                   size="10" 
+                                   autocomplete="off">
+                        </span>
+                        <span class="typeahead__button">
+                            <button class="btn btn-default" type="submit">
+                                <span class="typeahead__search-icon"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+			
+			<div class="input-prepend" >
+              <a href="cart.html" style="float: right;">
+                    <span class="glyphicon glyphicon-shopping-cart" ></span>
+                    <span class="badge" style="margin-right: 10px;">2</span>
+                  </a>
+              
+              <button class="btn btn-primary session_start" data-placement='bottom' style = "float:right;">
+                Hi, Santosh
+              </button>
+          </div>
+
+			<div id="popover-content" style="display: none">
+              <form>
+                <span class ="btn btn-success signout" >
+                  Sign Out
+                </span>
+              </form>
+          </div>	
+		</nav>
+<div class="container wrapper" style="margin-top: 5%;">
+
+    <div class="col-md-3">
+    <div class="sidebar-nav">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs visible-md navbar-brand">Sidebar menu</span>
+        </div>
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+          <ul class="nav">
+            <li>
+          <div class="panel panel-default">
+              <div class="panel-heading" id="make">Veichle Make <span class="clear pull-right">Clear</span></div><div class="panel-body">
+            <div class="checkbox">
+  <label><input type="checkbox" value="">Option 1</label>
+<div class="checkbox">
+  <label><input type="checkbox" value="">Option 2</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" value="">Option 3</label>
+</div>
+      </div>
+          
+      </div>
+    </div></li>
+            <li>
+          <div class="panel panel-default">
+              <div class="panel-heading" id="make">Veichle Make <span class="clear pull-right">Clear</span></div><div class="panel-body">
+            <div class="checkbox">
+  <label><input type="checkbox" value="">Option 1</label>
+<div class="checkbox">
+  <label><input type="checkbox" value="">Option 2</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" value="" >Option 3</label>
+</div>
+      </div>
+          
+      </div>
+    </div></li>
+            <li>
+          <div class="panel panel-default ">
+              <div class="panel-heading" id="make">Veichle Make <span class="clear pull-right">Clear</span></div><div class="panel-body">
+            <div class="checkbox">
+  <label><input type="checkbox" value="">Option 1</label>
+<div class="checkbox">
+  <label><input type="checkbox" value="">Option 2</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" value="" >Option 3</label>
+</div>
+      </div>
+          
+      </div>
+    </div></li>
+    
+    
+      <div class="panel panel-default"><div class="panel-heading" id="make">Price Range<span class="clear pull-right">Clear</span></div><div class="panel-body">
+ <div class="col-sm-12">
+             
+             <input type='range' id='r1' class='tip fill fill-replace' 
+       value='7' min='1' max='13' />
+              <span class="priceFrom pull-left">£5</span><span class="priceFrom pull-right">£100</span>
+
+    
+          </ul>
+        </div>
+        <div class="searchBtn"><button class="btn btn-block btn-large">Block</button></div>  <!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
+   <div class="col-md-9">
+       <div class="well well-sm">
+        
+         <div class="btn-group">
+                    </div>
+         
+         <nav class="pull-right" style="margin: -2% 0;">
+	<ul class="pagination" style="margin: 10% 0;"><li><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li></ul>
+</nav>
+
+    </div>
+           <div class="well well-sm">
+    <div id="products" class="row list-group">
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+           
+    
+     
+ <span class="pull-right">
+      
+     <nav>
+	<ul class="pagination"><li><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li></ul>
+</nav></span>
+
+    
+    </div>
+</div> 
+
+
+
+<script src="../bootstrap/js/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../JavaScript/jquery.typeahead.js"></script>
+<script src = ../JavaScript/header2.js></script>
+<script>
+	$('.session_start').popover({
+        html : true,
+        trigger : 'click',
+        content : function() {
+            return $('#popover-content').html();
+        }
+    });
+    $(document).on('click','.signout',function(){
+        window.location.replace("index.html");
+    });
+</script>
+</body>
+</html>
