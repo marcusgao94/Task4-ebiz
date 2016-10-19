@@ -1,4 +1,4 @@
-.affix {
+.header-nav {
       top: 0;
       width: 100%;
   }
@@ -20,8 +20,8 @@ background-color: #030033;
 }
 
   .navbar {
-    background-color: #0f006f;
-    border-color: #030033;
+    background-color: #fff;
+    border-color: #fff;
 }
 
 
