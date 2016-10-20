@@ -499,7 +499,7 @@
     </div>
     <div class = "well" id="section3">
       <span><b>Product Information</b></span>
-      <button type="button" class="btn btn-primary" style="float: right;">Change</button>
+      <button type="button" class="btn btn-primary" onclick='alert("not implemented yet");' style="float: right;">Change</button>
       <hr>
       <div class="well row">
         <div class = "col-sm-6 product">
@@ -607,6 +607,9 @@
           }
       });
       $(document).on('click','.loginid',function(){
+          window.location.replace("index2.html");
+      });
+      $(document).on('click','.placeorder',function(){
           window.location.replace("index2.html");
       });
       
