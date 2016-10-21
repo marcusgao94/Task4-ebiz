@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Welcome to UPMC Pharma</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/productdesc.css"> 
+    <link rel="stylesheet" href="../css/index.css">  
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/jquery.typeahead.css">
+</head>
+<body>
+<div class="row well">
+<!-- header start-->
+<div class="nav-side-menu pre-scrollable" style="width:auto;max-height:100%;margin-left: 0%;">
+    <div class="brand">Categories</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+    <div class="menu-list">
+      <ul id="menu-content" class="menu-content collapse out">
+        
+        <li data-toggle="collapse" data-target="#allergies" class="collapsed active">
+          <a href="#">
+            <i class="fa fa-gift fa-lg"></i>
+            Allergies
+            <span class="arrow"></span>
+          </a>
+        </li>
+        <ul class="sub-menu collapse" id="allergies">
+          <li class="active"><a href="#">Astelin</a></li>
+          <li><a href="#">Benadryl</a></li>
+          <li><a href="#">Clarinex</a></li>
+          <li><a href="#">Decadron</a></li>
+          <li><a href="#">Entocort</a></li>
+          <li><a href="#">Flonase</a></li>
+          <li><a href="#">Nasonex nasal spray</a></li>
+          <li><a href="#">Periactin</a></li>
+          <li><a href="#">Phenergan</a></li>
+          <li><a href="#">Quibron-t</a></li>
+          <li><a href="#">Rhinocort</a></li>
+          <li><a href="#">Serevent</a></li>
+          <li><a href="#">Seroflo</a></li>
+          <li><a href="#">Zyrtec</a></li>
+        </ul>
+        <li data-toggle="collapse" data-target="#antibiotics" class="collapsed">
+          <a href="#">
+            <i class="fa fa-globe fa-lg"></i> 
+            Antibiotics
+            <span class="arrow"></span>
+          </a>
+        </li>  
+        <ul class="sub-menu collapse" id="antibiotics">
+          <li>Amoxil</li>
+          <li>Ampicillin</li>
+          <li>Augmentin</li>
+          <li>Bactrim</li>
+          <li>Biaxi</li>
+          <li>Cefixime</li>
+          <li>Ceftin</li>
+          <li>Ciplox</li>
+          <li>Cleocin</li>
+          <li>Doxycyclin</li>
+          <li>Erythromycin</li>
+          <li>Floxin</li>
+          <li>Fucidin$</li>
+          <li>Keflex</li>
+          <li>Keftab</li>
+          <li>Minocin</li>
+          <li>Minomycin</li>
+          <li>Myambutol</li>
+          <li>Noroxin</li>
+          <li>Omnicef</li>
+          <li>Panmycin</li>
+          <li>Roxithromycin</li>
+          <li>Stromectol</li>
+          <li>Suprax</li>
+          <li>Trimox</li>
+          <li>Vanti</li>
+          <li>Zithroma</li>
+        </ul>
+
+        <li data-toggle="collapse" data-target="#birthControl" class="collapsed">
+          <a href="#">
+            <i class="fa fa-car fa-lg"></i>
+            BirthControl
+            <span class="arrow"></span>
+          </a>
+        </li>
+        <ul class="sub-menu collapse" id="birthControl">
+          <li>Alesse</li>
+          <li>Levlen</li>
+          <li>Mircett</li>
+          <li>Yasmin</li>
+        </ul>
+
+        <li data-toggle="collapse" data-target="#diabetes" class="collapsed">
+          <a href="#">
+            <i class="fa fa-car fa-lg"></i>
+            Diabetes
+            <span class="arrow"></span>
+          </a>
+        </li>
+        <ul class="sub-menu collapse" id="diabetes">
+          <li>Actoplus Met</li>
+          <li>Actos</li>
+          <li>Amaryl</li>
+          <li>Avapr</li>
+          <li>Benfotiamine</li>
+          <li>Cozaar </li>
+          <li>Diabecon </li>
+          <li>Duetac </li>
+          <li>Glucophage </li>
+          <li>Glucotrol XL </li>
+          <li>Glycome </li>
+          <li>Januvia </li>
+          <li>Metformin </li>
+          <li>Micronase </li>
+          <li>Prandin </li>
+          <li>Precose</li>
+        </ul>
+
+        <li data-toggle="collapse" data-target="#PainRelief" class="collapsed">
+          <a href="#">
+            <i class="fa fa-car fa-lg"></i>
+            PainRelief
+            <span class="arrow"></span>
+          </a>
+        </li>
+        <ul class="sub-menu collapse" id="PainRelief">
+          <li>Aleve</li>
+          <li>Anacin</li>
+          <li>Arcoxia</li>
+          <li>Artane</li>
+          <li>Aspirin</li>
+          <li>Azulfidine</li>
+          <li>Benemid</li>
+          <li>Cafergot</li>
+          <li>Colospa</li>
+          <li>Diclofenac Gel</li>
+          <li>Elavil</li>
+          <li>Flexisyn</li>
+          <li>Imitrex</li>
+          <li>Imuran</li>
+          <li>Lioresa</li>
+          <li>Maxalt</li>
+          <li>Mestinon</li>
+          <li>Mobic</li>
+          <li>Motrin</li>
+          <li>Naprosyn </li>
+          <li>Nimotop </li>
+          <li>Periactin </li>
+          <li>Phenergan </li>
+          <li>Pletal </li>
+          <li>Ponstel </li>
+          <li>Prednison </li>
+          <li>Probala </li>
+          <li>Pyridium </li>
+          <li>Rumalaya</li>
+          <li>Rumalaya forte</li>
+          <li>Rumalaya gel</li>
+          <li>Rumalaya liniment</li>
+          <li>Shallaki</li>
+          <li>Tegreto</li>
+          <li>Torado</li>
+          <li>Urispas</li>
+          <li>Voltaren</li>
+          <li>Voveran</li>
+          <li>Voveran sr</li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+
+  
+	<nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
+  <img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;">
+			<form class="navbar-form navbar-left" role="search">
+                <div class="typeahead__container">
+                    <div class="typeahead__field">
+                        <span class="typeahead__query">
+                            <input class="js-typeahead-input"
+                                   name="q"
+                                   type="text"
+                                   size="10" 
+                                   autocomplete="off">
+                        </span>
+                        <span class="typeahead__button">
+                            <button class="btn btn-default" type="submit">
+                                <span class="typeahead__search-icon"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+			
+			<div class="input-prepend" >
+              <a href="cart.html" style="float: right;">
+                    <span class="glyphicon glyphicon-shopping-cart" ></span>
+                    <span class="badge" style="margin-right: 10px;">2</span>
+                  </a>
+              
+              <button class="btn btn-primary session_start" data-placement='bottom' style = "float:right;">
+                Hi, Santosh
+              </button>
+          </div>
+
+			<div id="popover-content" style="display: none">
+              <form>
+                <span class ="btn btn-success signout" >
+                  Sign Out
+                </span>
+              </form>
+          </div>	
+		</nav>
+</div>
+<!-- header end-->
+<div class="container" id="product-section">
+  <div class="row">
+   <div class="col-md-6">
+    <img
+        src="../img/product1.png"
+        alt="Kodak Brownie Flash B Camera"
+        class="image-responsive"
+       />
+   </div>
+   <div class="col-md-6">
+    <div class="row">
+  <div class="col-md-12">
+   <h1>Madarchod </h1>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-md-12">
+  <span class="label label-primary">Vintage</span>
+  <span class="monospaced">No. 1960140180</span>
+ </div>
+</div><!-- end row -->
+<div class="row">
+ <div class="col-md-12">
+  <p class="description">
+   Classic film camera. Uses 620 roll film.
+   Has a 2&frac14; x 3&frac14; inch image size.
+  </p>
+ </div>
+</div><!-- end row -->
+<div class="row">
+ <div class="col-md-3">
+  <span class="sr-only">Four out of Five Stars</span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  <span class="label label-success">61</span>
+ </div>
+ <div class="col-md-3">
+  <button class=" btn-primary">Write a Review</button>
+ </div>
+</div><!-- end row -->
+<div class="row">
+ <div class="col-md-12 bottom-rule">
+  <h2 class="product-price">$129.00</h2>
+ </div>
+</div><!-- end row -->
+
+<div class="row add-to-cart">
+ <div class="col-md-5 product-qty">
+  <span class="btn btn-default btn-lg btn-qty">
+   <span class=" glyphicon-minus" aria-hidden="true"></span>
+  </span>
+  <input class="btn btn-default btn-lg btn-qty" value="1" />
+  <span class="btn btn-default btn-lg btn-qty">
+   <span class=" glyphicon-plus" aria-hidden="true"></span>
+  </span>
+ </div>
+ <div class="col-md-4">
+  <button class="btn btn-lg btn-brand btn-full-width">
+   Add to Cart
+  </button>
+ </div>
+</div><!-- end row -->
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+ <li role="presentation" class="active">
+  <a href="#description"
+   aria-controls="description"
+   role="tab"
+   data-toggle="tab"
+  >Description</a>
+ </li>
+ <li role="presentation">
+  <a href="#features"
+   aria-controls="features"
+   role="tab"
+   data-toggle="tab"
+  >Features</a>
+ </li>
+ <li role="presentation">
+  <a href="#notes"
+   aria-controls="notes"
+   role="tab"
+   data-toggle="tab"
+   >Notes</a>
+ </li>
+ <li role="presentation">
+  <a href="#reviews"
+   aria-controls="reviews"
+   role="tab"
+   data-toggle="tab"
+  >Reviews</a>
+ </li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+ <div role="tabpanel" class="tab-pane active" id="description">
+   <p class="top-10">
+  The 'Brownie' Flash B is a box camera taking 2&frac14; × 3&frac14;" frames on 620 film, made of sheet metal by Kodak Ltd. in England, 1958-60. 
+  A more luxurious version of the Brownie Six-20 Model F, it has a two-speed shutter (1/80, 1/40 +B), a close-focus (5-10ft) lens, a yellow filter and flash sync. The Flash B is very similar to the Brownie Flash IV, adding a two-speed shutter but lacking a tripod bush.
+ </p>
+ </div>
+ <div role="tabpanel" class="tab-pane top-10" id="features">
+  ...
+ </div>
+ <div role="tabpanel" class="tab-pane" id="notes">
+  ...
+ </div>
+ <div role="tabpanel" class="tab-pane" id="reviews">
+  ...
+ </div>
+</div>
+   </div>
+  </div><!-- end row -->
+ </div><!-- end container -->
+
+<script src="../bootstrap/js/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../JavaScript/index.js"></script>
+ <script src="../JavaScript/jquery.typeahead.js"></script>
+		<script src = ../JavaScript/header2.js></script>
+		<script>
+      $('.session_start').popover({
+          html : true,
+          trigger : 'click',
+          content : function() {
+              return $('#popover-content').html();
+          }
+      });
+      $(document).on('click','.signout',function(){
+          window.location.replace("index.html");
+      });
+    </script>
+</body>
+</html>
