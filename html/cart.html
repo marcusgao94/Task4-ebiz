@@ -218,7 +218,7 @@
 				<h1>shopping cart</h1>
 			</div>
 			<div class="col-xs-2 col-xs-offset-6" style="display: flex; align-items: flex-end;">
-				<button type="button" class="btn btn-primary placeorder">
+				<button type="button" class="btn btn-primary placeorder" onclick='window.location.replace("index2.html");'>
 					continue shopping
 				</button>
 			</div>
@@ -281,7 +281,7 @@
 						</div>
 						<div class="col-xs-2">$12.49</div>
 						<div class="col-xs-1"> 
-							<button class="btn btn-danger">remove</button>
+							<button class="btn btn-danger" onclick='alert("not implemented");'>remove</button>
 						</div>
 					</div>
 					<div class="row vc">
@@ -315,13 +315,13 @@
 						</div>
 						<div class="col-xs-2">$59.97</div>
 						<div class="col-xs-1"> 
-							<button class="btn btn-danger">remove</button>
+							<button class="btn btn-danger" onclick='alert("not implemented");'>remove</button>
 						</div>
 					</div>
 					<div class="row"><br /></div>
 					<div class="row vc">
 						<div class="col-xs-2">
-							<button class="btn btn-danger">
+							<button class="btn btn-danger" onclick='alert("not implemented");'>
 								remove selected
 							</button> 
 						</div>
@@ -386,7 +386,7 @@
 							</tr>
 						</table>
 					</div>
-					<button type="button" class="btn btn-primary placeorder" >
+					<button type="button" class="btn btn-primary placeorder" onclick='window.location.replace("summary.html");'>
 						proceed to checkout
 					</button><br/>
 				</div>
@@ -410,5 +410,8 @@
 	$(document).on('click','.signout',function(){
 		window.location.replace("index.html");
 	});
+	$(document).on('click','.sub-menu',function(){
+          window.location.replace("searchresults2.html");
+      });
 </script>
 </html>

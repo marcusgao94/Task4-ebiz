@@ -61,7 +61,7 @@ var data = {
                 onClickAfter: function (node, a, item, event) {
 
                     // href key gets added inside item from options.href configuration
-                    alert(item.href);
+                    window.location.replace("searchresults2.html");
 
                 }
             },
