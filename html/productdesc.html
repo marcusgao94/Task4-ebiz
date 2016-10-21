@@ -256,7 +256,7 @@
   <span class="label label-success">61</span>
  </div>
  <div class="col-md-3">
-  <button class=" btn-primary">Write a Review</button>
+  <button class="btn btn-primary review">Write a Review</button>
  </div>
 </div><!-- end row -->
 <div class="row">
@@ -276,7 +276,7 @@
   </span>
  </div>
  <div class="col-md-4">
-  <button class="btn btn-lg btn-brand btn-full-width">
+  <button class="btn btn-lg btn-brand btn-full-width cart">
    Add to Cart
   </button>
  </div>
@@ -354,6 +354,12 @@
       });
       $(document).on('click','.sub-menu',function(){
           window.location.replace("searchresults2.html");
+      });
+       $(document).on('click','.review',function(){
+          alert("not implemented");
+      });
+        $(document).on('click','.cart',function(){
+          alert("not implemented");
       });
     </script>
 </body>

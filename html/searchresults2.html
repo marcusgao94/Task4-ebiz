@@ -4,7 +4,12 @@
   <meta charset="utf-8">
   <title>Productpage</title>
   <style type="text/css">
-
+  .clear{
+    cursor:pointer;
+  }
+  .item{
+    cursor:pointer;
+  }
   </style>
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
   <link href="../css/columnleft.css" rel="stylesheet" type="text/css">
@@ -121,7 +126,7 @@
              
              <input type='range' id='r1' class='tip fill fill-replace' 
        value='7' min='1' max='13' />
-              <span class="priceFrom pull-left">£5</span><span class="priceFrom pull-right">£100</span>
+              <span class="priceFrom pull-left">$1</span><span class="priceFrom pull-right">$100</span>
 
     
           </ul>
@@ -137,7 +142,7 @@
                     </div>
          
          <nav class="pull-right" style="margin: -2% 0;">
-	<ul class="pagination" style="margin: 10% 0;"><li><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li></ul>
+	<ul class="pagination page-nav" style="margin: 10% 0;"><li><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li></ul>
 </nav>
 
     </div>
@@ -170,7 +175,7 @@ Nautres Bounty Acidophilus Probiotic tables helps promotes health. Each one of t
                     <h4 class="group inner list-group-item-heading">
                         Magnesium Citrate Oral Solution</h4>
                     <p class="group inner list-group-item-text">
-                        Helping to alleviated build-up in the digestive tract, UPMC Magnesium Citrate Oral Solution increases comfortably and ease, gently reliefs pain caused by indigestion and constipation. (Avl in 1.745 g, Cherry Flavor, 10 fl oz (296 ml))</p>
+                        Helping to alleviated build-up in the digestive tract, UPMC Magnesium Citrate Solution increases comfortably and ease, gently reliefs pain caused by indigestion. (Avl in 1.745 g, Cherry Flavor, 10 fl oz (296 ml))</p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
@@ -298,6 +303,16 @@ Cinnamon has long been known to help with heart health, circulation and sugar me
     $(document).on('click','.sub-menu',function(){
           window.location.replace("searchresults2.html");
       });
+    $(document).on('click','.clear',function(){
+          alert("not implemeted");
+      });
+    $(document).on('click','.page-nav',function(){
+          alert("not implemeted");
+      });
+    $(document).on('click','.item',function(){
+          window.location.replace("productdesc.html");
+      });
+    
 </script>
 </body>
 </html>
