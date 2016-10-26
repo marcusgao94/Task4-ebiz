@@ -32,9 +32,9 @@ background-color: #030033;
   }
 
 
-  .navbar .nav > li > a {
-   color: white; /*Change active text color here*/
-    }
+  /*.navbar .nav > li > a {
+   color: white; /*Change active text color here*
+    }*/
 
     .loginid,.signout { cursor: pointer; }
 
