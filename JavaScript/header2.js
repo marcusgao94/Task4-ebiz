@@ -8,14 +8,8 @@ var data = {
             "BirthControl": [
 				"Alesse","Levlen","Mircett", "Yasmin"
 			],
-			"Depression": [
-				"Amitriptyline", "Anafranil", "Bupron SR", "Bupropion", "Celexa", "Citalopram", "Clozaril", "Cymbalt", "Desyrel", "Effexor XR", "Elavil", "Emsam", "Endep", "Isoniazid", "Lexapro", "Lithium", "Pamelor", "Paroxetine", "Paxi", "Pristi", "Remeron", "Sinequan", "Trazodone", "Venlor", "Wellbutrin", "Wellbutrin SR", "Zoloft", "Zyban"
-            ],
 			"Diabetes": [
 				"Actoplus Met", "Actos", "Amaryl", "Avapr", "Benfotiamine", "Cozaar", "Diabecon", "Duetac", "Glucophage", "Glucotrol XL", "Glycome", "Januvia", "Metformin", "Micronase", "Prandin", "Precose"
-			],
-			"HeartDisease": [
-				"Abana","Albendazol","Aldacton","Altac","Atorlip-1","Atorlip-2","Atorlip-","Betapac","Bystoli","Cala","Cardize","Core","Digoxi","Diova","Plavi","Prednisolon","Priniv","Procardi","Propranolo","Tenormi","Toprol X","Torsemid","Vasote","Zestri"
 			],
 			"PainRelief": [
 				"Aleve","Anacin","Arcoxia","Artane","Aspirin$","Azulfidine","Benemid","Cafergot","Colospa","Diclofenac Gel","Elavil","Flexisyn$","Imitrex","Imuran","Lioresa","Maxalt","Mestinon","Mobic","Motrin","Naprosyn","Nimotop","Periactin","Phenergan","Pletal","Ponstel","Prednison","Probala","Pyridium","Rumalaya$","Rumalaya forte$","Rumalaya gel$","Rumalaya liniment$","Shallaki$","Tegreto","Torado","Urispas","Voltaren","Voveran","Voveran sr"
@@ -43,15 +37,9 @@ var data = {
                 },
                 "Birth Control": {
                     data: data.BirthControl
-                },
-                Depression: {
-                    data: data.Depression
                 }, 
                 Diabetes: {
                 	data: data.Diabetes
-                }, 
-                "Heart Disease": {
-                	data: data.HeartDisease
                 },
                 "Pain Relief": {
                 	data: data.PainRelief

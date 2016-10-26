@@ -10,6 +10,9 @@
   .item{
     cursor:pointer;
   }
+  .lead{
+    margin-left: 10px;
+  }
   </style>
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
   <link href="../css/columnleft.css" rel="stylesheet" type="text/css">
@@ -19,7 +22,7 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
-  <img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;">
+  <a href="index2.html"><img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;"></a>
 			<form class="navbar-form navbar-left" role="search">
                 <div class="typeahead__container">
                     <div class="typeahead__field">
@@ -78,14 +81,15 @@
           <div class="panel panel-default">
               <div class="panel-heading" id="make">Availability <span class="clear pull-right">Clear</span></div><div class="panel-body">
             <div class="checkbox">
-  <label><input type="checkbox" value="">In Store Only</label>
-<div class="checkbox">
-  <label><input type="checkbox" value="">Online </label>
-</div>
-<div class="checkbox ">
-  <label><input type="checkbox" value="">Special Order</label>
-</div>
-      </div>
+              <label><input type="checkbox" value="">In Store Only</label>
+              </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Online </label>
+            </div>
+            <div class="checkbox ">
+              <label><input type="checkbox" value="">Special Order</label>
+            </div>
+      
           
       </div>
     </div></li>
@@ -93,14 +97,15 @@
           <div class="panel panel-default">
               <div class="panel-heading" id="make1">Form <span class="clear pull-right">Clear</span></div><div class="panel-body">
             <div class="checkbox">
-  <label><input type="checkbox" value="">Soft Gel</label>
-<div class="checkbox">
-  <label><input type="checkbox" value="">Capsule</label>
-</div>
-<div class="checkbox ">
-  <label><input type="checkbox" value="" >Chewable Tablet</label>
-</div>
-      </div>
+              <label><input type="checkbox" value="">Soft Gel</label>
+              </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Capsule</label>
+            </div>
+            <div class="checkbox ">
+              <label><input type="checkbox" value="" >Chewable Tablet</label>
+            </div>
+      
           
       </div>
     </div></li>
@@ -108,20 +113,21 @@
           <div class="panel panel-default ">
               <div class="panel-heading" id="make2">Container Type <span class="clear pull-right">Clear</span></div><div class="panel-body">
             <div class="checkbox">
-  <label><input type="checkbox" value="">Aerosol</label>
-<div class="checkbox">
-  <label><input type="checkbox" value="">Tube</label>
-</div>
-<div class="checkbox ">
-  <label><input type="checkbox" value="" >Bottle</label>
-</div>
-      </div>
+              <label><input type="checkbox" value="">Aerosol</label>
+              </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Tube</label>
+            </div>
+            <div class="checkbox ">
+              <label><input type="checkbox" value="" >Bottle</label>
+            </div>
+      
           
       </div>
     </div></li>
     
     
-      <div class="panel panel-default"><div class="panel-heading" id="make">Price Range<span class="clear pull-right">Clear</span></div><div class="panel-body">
+      <div class="panel panel-default"><div class="panel-heading" id="make">Max Price<span class="clear pull-right">Clear</span></div><div class="panel-body">
  <div class="col-sm-12">
              
              <input type='range' id='r1' class='tip fill fill-replace' 
@@ -131,7 +137,7 @@
     
           </ul>
         </div>
-        <div class="searchBtn"><button class="btn btn-block btn-large">Block</button></div>  <!--/.nav-collapse -->
+         <!--/.nav-collapse -->
       </div>
     </div>
     </div>
@@ -139,29 +145,38 @@
        <div class="well well-sm">
         
          <div class="btn-group">
+         <span style="float: left;"><a href="index2.html" >/home</a><a href="searchresults2.html">/benadryl</a></span>
                     </div>
          
          <nav class="pull-right" style="margin: -2% 0;">
-	<ul class="pagination page-nav" style="margin: 10% 0;"><li><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li></ul>
-</nav>
+
+          	<ul class="pagination page-nav" style="margin: 10% 0;">
+
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+        </nav>
 
     </div>
            <div class="well well-sm">
     <div id="products" class="row list-group">
         <div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="../img/proda.jpg" alt="" />
+              <div class="linkme">
+                <img class="group list-group-image imgclickme" src="../img/proda.jpg" alt="" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         Nature's Bounty D-1000 IU Vitamin Supplement Softgels</h4>
                     <p class="group inner list-group-item-text">
-Nautres Bounty Acidophilus Probiotic tables helps promotes health. Each one of the 100 tablets contains millions of organisms that help balance the intestinal microflora. </p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
+                      Nautres Bounty Acidophilus Probiotic tables helps promotes health. Each one of the 100 tablets contains millions of organisms that help balance the intestinal microflora. </p>
+                </div>
+                    <div class="row ">
+                        <div class="col-xs-12 col-md-6 price">
                             <p class="lead">
-                                $21.000</p>
+                                $21.00</p>
                         </div>
-                        <div class="col-xs-12 col-md-6" onclick='alert("not implemented");'>
+                        <div class="col-xs-12 col-md-6" onclick='window.location = "cart.html";'>
                             <a class="btn btn-success" >Add to cart</a>
                         </div>
                     </div>
@@ -235,7 +250,8 @@ Nautres Bounty Acidophilus Probiotic tables helps promotes health. Each one of t
                     <h4 class="group inner list-group-item-heading">
                         Nature Made Fish Oil, Burp-Less,</h4>
                     <p class="group inner list-group-item-text">
-                       Be heart healthy with the help of pharmacist-recommended Nature Made Burp-Less Fish Oil.Each odorless serving contains 1000 mg of purified, wild-caught fish oil, including 300 mg of omega-3s,shown to reduce the occurrence of coronary heart disease and help maintain healthy triglyceride levels.</p>
+                       Be heart healthy with the help of pharmacist-recommended Nature Made Burp-Less Fish Oil.Each odorless serving contains 1000 mg of purified, wild-caught fish oil, including 300 mg of omega-3s,shown to reduce the occurrence of coronary heart disease.
+                       </p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
@@ -298,10 +314,10 @@ Cinnamon has long been known to help with heart health, circulation and sugar me
         }
     });
     $(document).on('click','.signout',function(){
-        window.location.replace("index.html");
+        window.location = "index.html";
     });
     $(document).on('click','.sub-menu',function(){
-          window.location.replace("searchresults2.html");
+          window.location = "searchresults2.html";
       });
     $(document).on('click','.clear',function(){
           alert("not implemeted");
@@ -309,9 +325,16 @@ Cinnamon has long been known to help with heart health, circulation and sugar me
     $(document).on('click','.page-nav',function(){
           alert("not implemeted");
       });
-    $(document).on('click','.item',function(){
-          window.location.replace("productdesc.html");
+    $(document).on('click','.caption',function(){
+          window.location = "productdesc.html";
       });
+    $(document).on('click','.price',function(){
+          window.location = "productdesc.html";
+      });
+    $(document).on('click','.imgclickme',function(){
+          window.location = "productdesc.html";
+      });
+    
     
 </script>
 </body>

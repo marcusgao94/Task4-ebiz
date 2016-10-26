@@ -13,7 +13,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
-		<img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;">
+		<a href="index2.html"><img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;"></a>
 		<form class="navbar-form navbar-left" role="search">
 			<div class="typeahead__container">
 				<div class="typeahead__field">
@@ -74,7 +74,6 @@
 			          <li><a href="#">Decadron</a></li>
 			          <li><a href="#">Entocort</a></li>
 			          <li><a href="#">Flonase</a></li>
-			          <li><a href="#">Nasonex nasal spray</a></li>
 			          <li><a href="#">Periactin</a></li>
 			          <li><a href="#">Phenergan</a></li>
 			          <li><a href="#">Quibron-t</a></li>
@@ -177,7 +176,6 @@
 					<li>Benemid</li>
 					<li>Cafergot</li>
 					<li>Colospa</li>
-					<li>Diclofenac Gel</li>
 					<li>Elavil</li>
 					<li>Flexisyn</li>
 					<li>Imitrex</li>
@@ -199,7 +197,6 @@
 					<li>Rumalaya</li>
 					<li>Rumalaya forte</li>
 					<li>Rumalaya gel</li>
-					<li>Rumalaya liniment</li>
 					<li>Shallaki</li>
 					<li>Tegreto</li>
 					<li>Torado</li>
@@ -218,7 +215,7 @@
 				<h1>shopping cart</h1>
 			</div>
 			<div class="col-xs-2 col-xs-offset-6" style="display: flex; align-items: flex-end;">
-				<button type="button" class="btn btn-primary placeorder" onclick='window.location.replace("index2.html");'>
+				<button type="button" class="btn btn-primary placeorder" onclick='window.location ="index2.html";'>
 					continue shopping
 				</button>
 			</div>
@@ -233,7 +230,7 @@
 				<form class="horizontal">
 					<div class="row">
 						<div class="col-xs-2 form-group" align="center">
-							<a href="#">select all</a>
+							<button class="btn btn-danger" onclick='alert("not implemented");'>select all</button>
 						</div>
 						<div class="col-xs-3 col-xs-offset-1" align="center">
 							<h4>description</h4>
@@ -280,7 +277,7 @@
 						</div>
 						<div class="col-xs-1">$12.49</div>
 						<div class="col-xs-1" style="padding: 0px"> 
-							<a href="#" class="del" onclick='alert("not implemented");'>remove</a>
+							<a href="#" class="del" onclick='alert("not implemented");'><button class="btn btn-danger">remove</button></a>
 						</div>
 					</div>
 					<div class="row vc">
@@ -314,14 +311,14 @@
 						</div>
 						<div class="col-xs-1">$59.97</div>
 						<div class="col-xs-1"> 
-							<a href="#" class="del" onclick='alert("not implemented");'>remove</a>
+							<a href="#" class="del" onclick='alert("not implemented");'><button class="btn btn-danger">remove</button></a>
 						</div>
 					</div>
 					<div class="row"><br /></div>
 					<div class="row vc">
 						<div class="col-xs-2" align=center>
 							<a href="#" class="del" onclick='alert("not implemented");'>
-								remove selected
+								<button class="btn btn-danger">remove selected</button>
 							</a> 
 						</div>
 					</div>
@@ -367,7 +364,7 @@
 							</tr>
 						</table>
 					</div>
-					<button type="button" class="btn btn-primary placeorder" onclick='window.location.replace("summary.html");'>
+					<button type="button" class="btn btn-primary placeorder" onclick='window.location = "summary.html";'>
 						proceed to checkout
 					</button><br/>
 				</div>
@@ -389,10 +386,10 @@
 		}
 	});
 	$(document).on('click','.signout',function(){
-		window.location.replace("index.html");
+		window.location = "index.html";
 	});
 	$(document).on('click','.sub-menu',function(){
-          window.location.replace("searchresults2.html");
+          window.location = "searchresults2.html";
       });
 </script>
 </html>
