@@ -14,7 +14,7 @@
 <!-- header start-->
 
 	<nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
-  <img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;">
+  <a href="index.html"><img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;"></a>
 			<form class="navbar-form navbar-left" role="search">
                 <div class="typeahead__container">
                     <div class="typeahead__field">
@@ -288,10 +288,10 @@
 			    }
 			});
 			$(document).on('click','.loginid',function(){
-			    window.location.replace("index2.html");
+			    window.location = "index2.html";
 			});
 			$(document).on('click','.sub-menu',function(){
-          window.location.replace("searchresults2.html");
+          window.location = "searchresults2.html";
       });
 		</script>
 </body>
