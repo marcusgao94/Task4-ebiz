@@ -21,9 +21,11 @@
   <link rel="stylesheet" href="../css/jquery.typeahead.css">
 </head>
 <body>
-<nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
+<!-- header start-->
+<div id="container">
+  <nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
   <a href="index2.html"><img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;"></a>
-			<form class="navbar-form navbar-left" role="search">
+      <form class="navbar-form navbar-left" role="search">
                 <div class="typeahead__container">
                     <div class="typeahead__field">
                         <span class="typeahead__query">
@@ -41,8 +43,8 @@
                     </div>
                 </div>
             </form>
-			
-			<div class="input-prepend" >
+      
+      <div class="input-prepend" >
               <a href="cart.html" style="float: right;">
                     <span class="glyphicon glyphicon-shopping-cart" ></span>
                     <span class="badge" style="margin-right: 10px;">2</span>
@@ -53,15 +55,69 @@
               </button>
           </div>
 
-			<div id="popover-content" style="display: none">
+      <div id="popover-content" style="display: none">
               <form>
                 <span class ="btn btn-success signout" >
                   Sign Out
                 </span>
               </form>
-          </div>	
-		</nav>
-<div class="container wrapper" style="margin-top: 5%;">
+          </div>  
+    </nav>
+    <nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 101;margin-top: 50px;">
+     <ul class="nav navbar-nav" style="margin-left: 25pc;">
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Allergies <b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Antibiotics<b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Birth Control<b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Diabetes<b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pain Relief<b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+            </ul>
+
+    
+    </nav>
+</div>
+</div>
+<!-- header end-->
+<div class="container wrapper" style="margin-top: 8%;">
 
     <div class="col-md-3">
     <div class="sidebar-nav">

@@ -12,204 +12,104 @@
 	<link rel="stylesheet" href="../css/jquery.typeahead.css">
 </head>
 <body>
-	<nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
-		<a href="index2.html"><img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;"></a>
-		<form class="navbar-form navbar-left" role="search">
-			<div class="typeahead__container">
-				<div class="typeahead__field">
-					<span class="typeahead__query">
-						<input class="js-typeahead-input"
-						name="q"
-						type="text"
-						size="10" 
-						autocomplete="off">
-					</span>
-					<span class="typeahead__button">
-						<button class="btn btn-default" type="submit">
-							<span class="typeahead__search-icon"></span>
-						</button>
-					</span>
-				</div>
-			</div>
-		</form>
+	<!-- header start-->
+<div id="container">
+  <nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
+  <a href="index2.html"><img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;"></a>
+      <form class="navbar-form navbar-left" role="search">
+                <div class="typeahead__container">
+                    <div class="typeahead__field">
+                        <span class="typeahead__query">
+                            <input class="js-typeahead-input"
+                                   name="q"
+                                   type="text"
+                                   size="10" 
+                                   autocomplete="off">
+                        </span>
+                        <span class="typeahead__button">
+                            <button class="btn btn-default" type="submit">
+                                <span class="typeahead__search-icon"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+      
+      <div class="input-prepend" >
+              <a href="cart.html" style="float: right;">
+                    <span class="glyphicon glyphicon-shopping-cart" ></span>
+                    <span class="badge" style="margin-right: 10px;">2</span>
+                  </a>
+              
+              <button class="btn btn-primary session_start" data-placement='bottom' style = "float:right;">
+                Hi, Santosh
+              </button>
+          </div>
 
-		<div class="input-prepend" >
-			<a href="cart.html" style="float: right;">
-				<span class="glyphicon glyphicon-shopping-cart" ></span>
-				<span class="badge" style="margin-right: 10px;">2</span>
-			</a>
+      <div id="popover-content" style="display: none">
+              <form>
+                <span class ="btn btn-success signout" >
+                  Sign Out
+                </span>
+              </form>
+          </div>  
+    </nav>
+    <nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 101;margin-top: 50px;">
+     <ul class="nav navbar-nav" style="margin-left: 25pc;">
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Allergies <b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Antibiotics<b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Birth Control<b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Diabetes<b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pain Relief<b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+            </ul>
 
-			<button class="btn btn-primary session_start" data-placement='bottom' style = "float:right;">
-				Hi, Santosh
-			</button>
-		</div>
+    
+    </nav>
+</div>
+</div>
+<!-- header end-->
 
-		<div id="popover-content" style="display: none">
-			<form>
-				<span class ="btn btn-success signout" >
-					Sign Out
-				</span>
-			</form>
-		</div>  
-	</nav>
-
-	<div class="nav-side-menu pre-scrollable" style="width:auto;max-height:100%;margin-left: 2%;">
-		<div class="brand">Categories</div>
-		<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-
-		<div class="menu-list">
-			<ul id="menu-content" class="menu-content collapse out">
-				
-				<li data-toggle="collapse" data-target="#allergies" class="collapsed active">
-					<a href="#">
-						<i class="fa fa-gift fa-lg"></i>
-						Allergies
-						<span class="arrow"></span>
-					</a>
-				</li>
-				<ul class="sub-menu collapse" id="allergies">
-					<li class="active"><a href="#">Astelin</a></li>
-			          <li><a href="#">Benadryl</a></li>
-			          <li><a href="#">Clarinex</a></li>
-			          <li><a href="#">Decadron</a></li>
-			          <li><a href="#">Entocort</a></li>
-			          <li><a href="#">Flonase</a></li>
-			          <li><a href="#">Periactin</a></li>
-			          <li><a href="#">Phenergan</a></li>
-			          <li><a href="#">Quibron-t</a></li>
-			          <li><a href="#">Rhinocort</a></li>
-			          <li><a href="#">Serevent</a></li>
-			          <li><a href="#">Seroflo</a></li>
-			          <li><a href="#">Zyrtec</a></li>
-				</ul>
-				<li data-toggle="collapse" data-target="#antibiotics" class="collapsed">
-					<a href="#">
-						<i class="fa fa-globe fa-lg"></i> 
-						Antibiotics
-						<span class="arrow"></span>
-					</a>
-				</li>  
-				<ul class="sub-menu collapse" id="antibiotics">
-					<li>Amoxil</li>
-					<li>Ampicillin</li>
-					<li>Augmentin</li>
-					<li>Bactrim</li>
-					<li>Biaxi</li>
-					<li>Cefixime</li>
-					<li>Ceftin</li>
-					<li>Ciplox</li>
-					<li>Cleocin</li>
-					<li>Doxycyclin</li>
-					<li>Erythromycin</li>
-					<li>Floxin</li>
-					<li>Fucidin$</li>
-					<li>Keflex</li>
-					<li>Keftab</li>
-					<li>Minocin</li>
-					<li>Minomycin</li>
-					<li>Myambutol</li>
-					<li>Noroxin</li>
-					<li>Omnicef</li>
-					<li>Panmycin</li>
-					<li>Roxithromycin</li>
-					<li>Stromectol</li>
-					<li>Suprax</li>
-					<li>Trimox</li>
-					<li>Vanti</li>
-					<li>Zithroma</li>
-				</ul>
-
-				<li data-toggle="collapse" data-target="#birthControl" class="collapsed">
-					<a href="#">
-						<i class="fa fa-car fa-lg"></i>
-						BirthControl
-						<span class="arrow"></span>
-					</a>
-				</li>
-				<ul class="sub-menu collapse" id="birthControl">
-					<li>Alesse</li>
-					<li>Levlen</li>
-					<li>Mircett</li>
-					<li>Yasmin</li>
-				</ul>
-
-				<li data-toggle="collapse" data-target="#diabetes" class="collapsed">
-					<a href="#">
-						<i class="fa fa-car fa-lg"></i>
-						Diabetes
-						<span class="arrow"></span>
-					</a>
-				</li>
-				<ul class="sub-menu collapse" id="diabetes">
-					<li>Actoplus Met</li>
-					<li>Actos</li>
-					<li>Amaryl</li>
-					<li>Avapr</li>
-					<li>Benfotiamine</li>
-					<li>Cozaar </li>
-					<li>Diabecon </li>
-					<li>Duetac </li>
-					<li>Glucophage </li>
-					<li>Glucotrol XL </li>
-					<li>Glycome </li>
-					<li>Januvia </li>
-					<li>Metformin </li>
-					<li>Micronase </li>
-					<li>Prandin </li>
-					<li>Precose</li>
-				</ul>
-
-				<li data-toggle="collapse" data-target="#PainRelief" class="collapsed">
-					<a href="#">
-						<i class="fa fa-car fa-lg"></i>
-						PainRelief
-						<span class="arrow"></span>
-					</a>
-				</li>
-				<ul class="sub-menu collapse" id="PainRelief">
-					<li>Aleve</li>
-					<li>Anacin</li>
-					<li>Arcoxia</li>
-					<li>Artane</li>
-					<li>Aspirin</li>
-					<li>Azulfidine</li>
-					<li>Benemid</li>
-					<li>Cafergot</li>
-					<li>Colospa</li>
-					<li>Elavil</li>
-					<li>Flexisyn</li>
-					<li>Imitrex</li>
-					<li>Imuran</li>
-					<li>Lioresa</li>
-					<li>Maxalt</li>
-					<li>Mestinon</li>
-					<li>Mobic</li>
-					<li>Motrin</li>
-					<li>Naprosyn </li>
-					<li>Nimotop </li>
-					<li>Periactin </li>
-					<li>Phenergan </li>
-					<li>Pletal </li>
-					<li>Ponstel </li>
-					<li>Prednison </li>
-					<li>Probala </li>
-					<li>Pyridium </li>
-					<li>Rumalaya</li>
-					<li>Rumalaya forte</li>
-					<li>Rumalaya gel</li>
-					<li>Shallaki</li>
-					<li>Tegreto</li>
-					<li>Torado</li>
-					<li>Urispas</li>
-					<li>Voltaren</li>
-					<li>Voveran</li>
-					<li>Voveran sr</li>
-				</ul>
-			</ul>
-		</div>
-	</div>
-
-	<div class="container" style="margin-top: 50px; margin-left: 15%; margin-right: 5%; margin-bottom: 100px; width: 80%">
+	<div class="container" style="margin-top: 6%; margin-left: 15%; margin-right: 5%; margin-bottom: 100px; width: 80%">
 		<div class="row" style="display: flex;">
 			<div class="col-xs-4">
 				<h1>shopping cart</h1>
@@ -265,7 +165,7 @@
 							<select class="form-control" style="width: 50%">
 								<option value="1">1</option>
 								<option value="2">2</option>
-								<option value="3">3</option>
+								<option value="3" selected="selected">3</option>
 								<option value="4">4</option>
 								<option value="5">5</option>
 								<option value="6">6</option>
@@ -275,7 +175,7 @@
 								<option value="10">10</option>
 							</select>
 						</div>
-						<div class="col-xs-1">$12.49</div>
+						<div class="col-xs-1">$37.47</div>
 						<div class="col-xs-1" style="padding: 0px"> 
 							<a href="#" class="del" onclick='alert("not implemented");'>remove</a>
 						</div>
@@ -288,21 +188,21 @@
 							<input type="checkbox" />
 						</div>	
 						<div class="col-xs-1">
-							<img class="img-responsive" src="../img/cart-2.jpg" alt="shopping car 2">
+							<img class="img-responsive" src="../img/proda.jpg" alt="shopping car 2">
 						</div>
 						<div class="col-xs-3 description" style="display: inline;">
-							<span>Fluticasone Propionate Nasal Spray, 50 mcg, 120 count</span><br/>
+							<span>Nature's Bounty D-1000 IU Vitamin Supplement Softgels</span><br/>
 							<br/>
-							<span>0.16 lbs</span><br />
+							<span>200mg</span><br />
 							<br/>
 							<span>usually shipped in 24 hours</span><br />
 						</div>
-						<div class="col-xs-1">$19.99</div>
+						<div class="col-xs-1">$21.00</div>
 						<div class="col-xs-3">
 							<select class="form-control" style="width: 50%">
 								<option value="1">1</option>
 								<option value="2">2</option>
-								<option value="3" selected="selected">3</option>
+								<option value="3" >3</option>
 								<option value="4">4</option>
 								<option value="5">5</option>
 								<option value="6">6</option>
@@ -312,7 +212,7 @@
 								<option value="10">10</option>
 							</select>
 						</div>
-						<div class="col-xs-1">$59.97</div>
+						<div class="col-xs-1">$21.00</div>
 						<div class="col-xs-1"> 
 							<a href="#" class="del" onclick='alert("not implemented");'>remove</a>
 						</div>
@@ -340,7 +240,7 @@
 									Items:
 								</td>
 								<td class="rightd">
-									$9.99
+									$58.47
 								</td>
 							</tr>
 							<tr>
@@ -348,7 +248,7 @@
 									Total before tax:
 								</td>
 								<td class="rightd">
-									$9.99
+									$58.47
 								</td>
 							</tr>
 							<tr>
@@ -364,7 +264,7 @@
 									Order Total:
 								</td>
 								<td class="rightd order2">
-									$9.99
+									$58.47
 								</td>
 							</tr>
 						</table>
