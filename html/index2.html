@@ -38,7 +38,7 @@
       <div class="input-prepend" >
               <a href="cart.html" style="float: right;">
                     <span class="glyphicon glyphicon-shopping-cart" ></span>
-                    <span class="badge" style="margin-right: 10px;">2</span>
+                    <span class="badge" style="margin-right: 10px;">1</span>
                   </a>
               
               <button class="btn btn-primary session_start" data-placement='bottom' style = "float:right;">
@@ -54,7 +54,7 @@
               </form>
           </div>  
     </nav>
-    <nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 101;margin-top: 50px;">
+    <nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 99;margin-top: 50px;">
      <ul class="nav navbar-nav" style="margin-left: 25pc;">
                 <li>
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Allergies <b class="caret"></b></a>
@@ -174,6 +174,9 @@
       });
       $(document).on('click','.signout',function(){
           window.location = "index.html";
+      });
+      $(document).on('click','.typeahead__group',function(){
+          window.location = "searchresults2.html";
       });
       $(document).on('click','.sub-menu',function(){
           window.location = "searchresults2.html";

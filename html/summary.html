@@ -172,7 +172,7 @@
   </div>
 
   
-  <nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 100;">
+  <nav class="navbar navbar-inverse header-nav" data-spy="affix" style="z-index: 99;">
   <img src="../img/logo.png" id="img1" class="media-object" style="width:200px; float: left;">
       <form class="navbar-form navbar-left" role="search">
                 <div class="typeahead__container">
@@ -217,7 +217,7 @@
   <div class="container" style="margin-top: 50px;">
     <div class="row">
       <nav class="col-sm-3" id="myScrollspy">
-        <ul class="nav nav-pills nav-stacked" style="margin-top: 32px;">
+        <ul class="nav nav-pills nav-stacked" style="margin-top: 50px;">
           <br/>
           <li class="active" id="li1"><a href="#section1">Address Information</a></li>
           <li><a href="#section2">Billing Information</a></li>
@@ -707,7 +707,8 @@
     </div>
   </div>
   <div class="col-sm-3">
-    <div class = "well fixit" data-spy = "affix">
+    <div class = "well fixit" data-spy = "affix" style="
+    max-width: 300px;">
       <button type="button" class="btn btn-primary placeorder" >
         Place Your Order
       </button><br/><hr>
@@ -784,15 +785,20 @@
           }
       });
       $(document).on('click','.signout',function(){
-          window.location.replace("index.html");
+          window.location = "index.html";
       });
       $(document).on('click','.placeorder',function(){
-          window.location.replace("index2.html");
+          window.location = "index2.html";
       });
       $(document).on('click','.promo',function(){
           alert("not implemented");
       });
-      
+      $(document).on('click','.typeahead__group',function(){
+          window.location = "searchresults2.html";
+      });
+      $(document).on('click','.sub-menu',function(){
+          window.location = "searchresults2.html";
+      });
     </script>
 <script src="../JavaScript/summary.js"></script>
 <script type="text/javascript">
@@ -804,4 +810,3 @@
 </script>
 </body>
 </html>
-
