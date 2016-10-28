@@ -130,7 +130,7 @@
 				<form class="horizontal">
 					<div class="row">
 						<div class="col-xs-2 form-group" align="center">
-							<a href="#" onclick='alert("not implemented");'>select all</a>
+							<a href="#" class="construct">select all</a>
 						</div>
 						<div class="col-xs-3 col-xs-offset-1" align="center">
 							<h4>description</h4>
@@ -177,7 +177,7 @@
 						</div>
 						<div class="col-xs-1">$37.47</div>
 						<div class="col-xs-1" style="padding: 0px"> 
-							<a href="#" class="del" onclick='alert("not implemented");'>remove</a>
+							<a href="#" class="del construct">remove</a>
 						</div>
 					</div>
 					<div class="row">
@@ -219,14 +219,14 @@
 						</div>
 						<div class="col-xs-1">$21.00</div>
 						<div class="col-xs-1"> 
-							<a href="#" class="del" onclick='alert("not implemented");'>remove</a>
+							<a href="#" class="del construct">remove</a>
 						</div>
 					</div>
 					<div class="row"><br /></div>
 					<div class="row">
 						<div class="col-xs-3">
 							<span class="pull-left">
-								<a href="#" class="del" onclick='alert("not implemented");'>
+								<a href="#" class="del construct">
 								remove selected
 								</a> 
 							</span>
@@ -304,5 +304,8 @@
 	$(document).on('click','.sub-menu',function(){
           window.location = "searchresults2.html";
       });
+	$(document).on('click','.construct',function(){
+		window.location = "underConstruction.html";
+	});
 </script>
 </html>
