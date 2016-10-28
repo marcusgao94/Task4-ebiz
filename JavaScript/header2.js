@@ -8,7 +8,7 @@ var data = {
             "BirthControl": [
 				"Alesse","Levlen","Mircett", "Yasmin"
 			],
-			"Diabetes": [
+			"Vitamins": [
 				"Actoplus Met", "Actos", "Amaryl", "Avapr", "Benfotiamine", "Cozaar", "Diabecon", "Duetac", "Glucophage", "Glucotrol XL", "Glycome", "Januvia", "Metformin", "Micronase", "Prandin", "Precose"
 			],
 			"PainRelief": [
@@ -38,7 +38,7 @@ var data = {
                 "Birth Control": {
                     data: data.BirthControl
                 }, 
-                Diabetes: {
+                Vitamins: {
                 	data: data.Diabetes
                 },
                 "Pain Relief": {
