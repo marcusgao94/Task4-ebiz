@@ -51,9 +51,9 @@
 			<div id="popover-content" style="display: none">
 				<form>
 				   	Username&nbsp;&nbsp;
-				   	<input class="username" type="text"/>
+				   	<input id ="uname" class="username" type="text"/>
 				   	Password&nbsp;&nbsp;
-				   	<input class="password" type="text"/><br/><br/>
+				   	<input id="pwd" class="password" type="password"/><br/><br/>
 				
 				   	<span class ="btn btn-success loginid" >
 				   		Login
@@ -182,8 +182,21 @@
 			        return $('#popover-content').html();
 			    }
 			});
-			$(document).on('click','.loginid',function(){
+      var uname = document.getElementById('uname');
+			var pwd = document.getElementById('pwd');
+     
+      $(document).on('click','.loginid',function(){
+         if ($('#uname').val().trim() == '') {
+          $('#uname').css('border-color', 'red');
+          $('#pwd').css('border-color', '');
+      }
+      else if ($('#pwd').val().trim() == '') {
+          $('#uname').css('border-color', '');
+          $('#pwd').css('border-color', 'red');
+      } else {
 			    window.location = "index2.html";
+        }
+
 			});
       $(document).on('click','.typeahead__group',function(){
           window.location = "searchresults2.html";
