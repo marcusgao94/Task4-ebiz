@@ -137,13 +137,10 @@
           <div class="panel panel-default">
               <div class="panel-heading" id="make">Availability <span class="clear pull-right">Clear</span></div><div class="panel-body">
             <div class="checkbox">
-              <label><input type="checkbox" value="">In Store Only</label>
+              <label><input type="checkbox" name="chk[]" value="" class="checkbox_check">In Store Only</label>
               </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="">Online </label>
-            </div>
-            <div class="checkbox ">
-              <label><input type="checkbox" value="">Special Order</label>
+              <label><input type="checkbox" name="chk[]" value="" class="checkbox_check">Online </label>
             </div>
       
           
@@ -153,13 +150,13 @@
           <div class="panel panel-default">
               <div class="panel-heading" id="make1">Form <span class="clear pull-right">Clear</span></div><div class="panel-body">
             <div class="checkbox">
-              <label><input type="checkbox" value="">Soft Gel</label>
+              <label><input type="checkbox" name="chk[]" value="" class="checkbox_check">Soft Gel</label>
               </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="">Capsule</label>
+              <label><input type="checkbox" name="chk[]" value="" class="checkbox_check">Capsule</label>
             </div>
             <div class="checkbox ">
-              <label><input type="checkbox" value="" >Chewable Tablet</label>
+              <label><input type="checkbox" name="chk[]" value="" class="checkbox_check">Chewable Tablet</label>
             </div>
       
           
@@ -167,20 +164,22 @@
     </div></li>
             <li>
           <div class="panel panel-default ">
-              <div class="panel-heading" id="make2">Container Type <span class="clear pull-right">Clear</span></div><div class="panel-body">
+              <div class="panel-heading" id="make2">Container Type <span class="clear pull-right">Clear</span></div>
+              <div class="panel-body">
             <div class="checkbox">
-              <label><input type="checkbox" value="">Aerosol</label>
+              <label><input type="checkbox" name="chk[]" value="" class="checkbox_check">Aerosol</label>
               </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="">Tube</label>
+              <label><input type="checkbox" name="chk[]" value="" class="checkbox_check">Tube</label>
             </div>
             <div class="checkbox ">
-              <label><input type="checkbox" value="" >Bottle</label>
+              <label><input type="checkbox" name="chk[]" value="" class="checkbox_check">Bottle</label>
             </div>
       
           
       </div>
     </div></li>
+    
     
     
       <div class="panel panel-default"><div class="panel-heading" id="make">Max Price<span class="clear pull-right">Clear</span></div><div class="panel-body">
@@ -192,6 +191,8 @@
 
     
           </ul>
+
+<div class="btn btn-success make_" style="width:100%;">Filter</div>
         </div>
          <!--/.nav-collapse -->
       </div>
@@ -327,7 +328,7 @@
                 </div>
             </div>
         </div>
-        <div class="item  col-xs-4 col-lg-4">
+        <div class="item disappear col-xs-4 col-lg-4">
             <div class="thumbnail">
               <div class="linkme">
                 <img class="group list-group-image imgclickme" src="../img/proda.jpg" alt="" style="max-width: 100%;"/>
@@ -405,7 +406,13 @@
     $(document).on('click','.typeahead__group',function(){
           window.location = "searchresults2.html";
       });
-    
+    $(document).on('click','.make_',function(){
+          if ($('input.checkbox_check').is(':checked')) {
+              $('.disappear').css('display', 'none');
+          } else {
+            $('.disappear').css('display', 'block');
+          }
+    });
 </script>
 </body>
 </html>
