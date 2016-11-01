@@ -185,7 +185,7 @@
 						autocomplete="off">
 					</span>
 					<span class="typeahead__button">
-						<button class="btn btn-default" type="submit" onclick="window.location = 'searchresults2.html'">
+						<button class="btn btn-default clickme" type="submit" onclick="window.location = 'searchresults2.html'">
 							<span class="typeahead__search-icon"></span>
 						</button>
 					</span>
@@ -796,6 +796,10 @@
 	$(document).on('click','.sub-menu',function(){
 		window.location = "searchresults2.html";
 	});
+	$(document).on('click','.clickme',function(e){
+          e.preventDefault();
+          window.location = "searchresults2.html";
+      });
 </script>
 <script src="../JavaScript/summary.js"></script>
 <script type="text/javascript">
