@@ -26,7 +26,7 @@ var data = {
                 template: "{{group}} medicines!"
             },
             maxItemPerGroup: 5,
-            dropdownFilter: "all medicines",
+            dropdownFilter: "All medicines",
             emptyTemplate: '"{{query}}"',
             source: {
                 Allergies: {
