@@ -27,7 +27,7 @@ var data = {
             },
             maxItemPerGroup: 5,
             dropdownFilter: "all medicines",
-            emptyTemplate: 'No result for "{{query}}"',
+            emptyTemplate: '"{{query}}"',
             source: {
                 Allergies: {
                     data: data.Allergies
